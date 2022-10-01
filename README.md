@@ -25,11 +25,11 @@
 
 SigNoz helps developers monitor applications and troubleshoot problems in their deployed applications. SigNoz uses distributed tracing to gain visibility into your software stack.
 
-👉 You can see metrics like p99 latency, error rates for your services, external API calls and individual end points.
+👉 You can see metrics like p99 latency, error rates for your services, external API calls, and individual endpoints.
 
-👉 You can find the root cause of the problem by going to the exact traces which are causing the problem and see detailed flamegraphs of individual request traces.
+👉 You can find the root cause of the problem by going to the exact traces which are causing the problem and seeing detailed flame graphs of individual request traces.
 
-👉 Run aggregates on trace data to get business relevant metrics
+👉 Run aggregates on trace data to get business-relevant metrics
 
 ![screenzy-1644432902955](https://user-images.githubusercontent.com/504541/153270713-1b2156e6-ec03-42de-975b-3c02b8ec1836.png)
 <br />
@@ -55,7 +55,7 @@ Come say Hi to us on [Slack](https://signoz.io/slack) 👋
 - Slowest endpoints in your application
 - See exact request trace to figure out issues in downstream services, slow DB queries, call to 3rd party services like payment gateways, etc
 - Filter traces by service name, operation, latency, error, tags/annotations.
-- Run aggregates on trace data (events/spans) to get business relevant metrics. e.g. You can get error rate and 99th percentile latency of `customer_type: gold` or `deployment_version: v2` or `external_call: paypal`
+- Run aggregates on trace data (events/spans) to get business-relevant metrics. e.g. You can get error rate and 99th percentile latency of `customer_type: gold` or `deployment_version: v2` or `external_call: paypal`
 - Unified UI for metrics and traces. No need to switch from Prometheus to Jaeger to debug issues.
 
 <br /><br />
@@ -64,7 +64,7 @@ Come say Hi to us on [Slack](https://signoz.io/slack) 👋
 
 ## Why SigNoz?
 
-Being developers, we found it annoying to rely on closed source SaaS vendors for every small feature we wanted. Closed source vendors often surprise you with huge month end bills without any transparency.
+Being developers, we found it annoying to rely on closed-source SaaS vendors for every small feature we wanted. Closed source vendors often surprise you with huge month end bills without any transparency.
 
 We wanted to make a self-hosted & open source version of tools like DataDog, NewRelic for companies that have privacy and security concerns about having customer data going to third party services.
 
@@ -108,7 +108,7 @@ Please follow the steps listed [here](https://signoz.io/docs/deployment/helm_cha
 
 ### SigNoz vs Prometheus
 
-Prometheus is good if you want to do just metrics. But if you want to have a seamless experience between metrics and traces, then current experience of stitching together Prometheus & Jaeger is not great.
+Prometheus is good if you want to do just metrics. But if you want to have a seamless experience between metrics and traces, then the current experience of stitching together Prometheus & Jaeger is not great.
 
 Our goal is to provide an integrated UI between metrics & traces - similar to what SaaS vendors like Datadog provides - and give advanced filtering and aggregation over traces, something which Jaeger currently lack.
 
@@ -116,11 +116,11 @@ Our goal is to provide an integrated UI between metrics & traces - similar to wh
 
 ### SigNoz vs Jaeger
 
-Jaeger only does distributed tracing. SigNoz supports metrics, traces and logs - all the 3 pillars of observability.
+Jaeger only does distribute tracing. SigNoz supports metrics, traces, and logs - all the 3 pillars of observability.
 
-Moreover, SigNoz has few more advanced features wrt Jaeger:
+Moreover, SigNoz has a few more advanced features wrt Jaeger:
 
-- Jaegar UI doesn’t show any metrics on traces or on filtered traces
+- Jaeger UI doesn’t show any metrics on traces or filtered traces
 - Jaeger can’t get aggregates on filtered traces. For example, p99 latency of requests which have tag - customer_type='premium'. This can be done easily on SigNoz
 
 <br /><br />
